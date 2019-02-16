@@ -1,0 +1,52 @@
+#someText{
+   height: 300px;
+   width: 500px;
+
+    
+}
+
+#thePoem{
+    background-image: url(hearts.png);
+    background-size: 150px;
+    color: black;
+    font-size: 30px;
+    height: 100px;
+    width:500px;
+}
+
+#default{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+    height: 1600px;
+    width: 500px;
+    background-color: pink;
+}
+
+
+#wholeBackground{
+    width: 1000px;
+    height: 2000px;
+}
+
+#lhs{
+    float: left;
+    background-color: pink;
+    height: 2000px;
+    width: 500px;
+}
+
+#rhs{
+    float: left;
+    background-image: url(funnyHearts.jpg);
+    background-size: 500px;
+    background-color: red;
+    height: 2000px;
+    width: 500px;
+}
+
+#marryingKindVid{
+    margin-top: 200px;
+    margin-left: 75px;
+}
