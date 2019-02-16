@@ -1,0 +1,267 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta name= "viewport" content = "width= device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+<link rel="stylesheet" type = "text/css" href="poem.css" media="all"> 
+
+<script src="poem.js" defer></script>
+</head>
+
+
+<body>
+<div id="wholeBackground">
+<div id="lhs">
+<div id="someText">
+    Us math lovers can be romantic too! A Markov chain will 
+    help me make you a poem for Valentine's day since algorithms
+    decide everything else these days, why not get in on the action?
+    My dear habibi! 
+    (Habibi means friend in Arabic-although can also be used 
+    to say lover since it's taboo to have a lover) 
+    Paste your own poem or use the default to write your poem using
+    a Markov chain. Also, for full effect listen to the song 
+    in the window to your right!   Paste your favorite
+    lyrics or text in the box and click to spit out a poem!
+    <p>
+    Default poem used from this <a href = "https://glli-us.org/2018/02/20/arabian-love-poems-full-arabic-and-english-texts/">website</a>.
+    </p>
+    <p>
+    <input type="text" id="thePoem" value=
+
+"
+An Ode to Sadness 
+
+By Nizar Qabbani, tr. Rachel Schine 
+
+Your love has taught me… how to be sad.
+And I have needed, for ages   
+A woman to make me sad  
+A woman in whose arms I could weep  
+Like a sparrow ,
+A woman—to gather up my pieces— 
+Like shards of shattered crystal 
+
+Your love has taught me, my dear,
+The worst of habits 
+It has taught me to fill up my glass 
+A thousand times per night 
+And to sample the treatment of druggists 
+To knock at the diviners’ door 
+It has taught me— I now leave my home 
+To comb the roadside flagstones 
+And I stalk your visage 
+In the rain, and in the lights of cars 
+I stalk your specter 
+Even… even… 
+In sheets of advertisements… 
+
+Your love has taught me… 
+How I’ve been love-lost in my own face—for hours 
+Searching for a gypsy poem,
+That every gypsy girl might envy 
+Searching for a face—a voice—
+Your love is all the faces and all the voices.
+
+Your love has made me enter, my dear 
+Cities of sorrows 
+Before you, I had not entered 
+Cities of sorrows—
+I had never known— 
+That a tear was a person 
+That a person without sadness 
+Is the memory of a person…
+
+Your love has taught me…
+To behave like kids,
+To draw your face— 
+With chalk upon the walls 
+And on the sails of fishermen’s crafts 
+Upon the church bells,
+And the crosses.
+Your love has taught me… 
+How love alters the turning of time—
+It has taught me that when I love,
+The earth holds back its spinning 
+Your love has taught me things…
+That were never part of the accounting 
+So I read the stories of children—
+I entered the palaces of the jinn kings 
+I dreamed that the daughter of the sultan 
+Married me—
+Those eyes of hers… purer than the gulf waters 
+Those lips of hers… more luscious than a pomegranate’s bloom 
+And I dreamed that I safeguarded her 
+Like the knights,
+I dreamed that I gifted her,
+With strands of pearl and coral 
+Your love has taught me, my dear, what delirium is 
+It has taught me how life goes on,
+With the sultan’s daughter never coming. 
+
+Your love has taught me…
+How I love you in all things 
+In the naked tree 
+In the desiccated, yellow leaves 
+In the rainy weather—in the storms 
+In the smallest of cafes—
+In which we, of an evening, drank our black coffee 
+
+Your love has taught me to seek refuge 
+In nameless hotels 
+In nameless churches 
+In nameless cafes 
+Your love has taught me…
+How the night distends with strangers’ sorrows 
+It has taught me… how to see Beirut: 
+A woman… a madame of seductions 
+A woman, wearing each and every night 
+The finest garments she possesses 
+Sprinkling perfume on her breasts 
+For the sailors—and the princes—
+Your love has taught me…  
+To weep for lack of crying 
+It has taught me how sadness sleeps 
+Like a young boy with severed feet 
+On the streets of Rūsha and Ḥamrā’ 
+
+Your love has taught me… how to be sad. 
+And I have needed, for ages 
+A woman to make me sad 
+A woman in whose arms I could weep 
+Like a sparrow,
+A woman— to gather up my pieces— 
+Like shards of shattered crystal 
+"
+    </p>
+</div>
+
+<div id ="getPoem">
+    <button onclick = "writePoem('thePoem')"> Paste in the box and click to get your poem!</button>
+</div>
+
+<div id ="default">
+    <pre>
+        An Ode to Sadness
+
+By Nizar Qabbani, tr. Rachel Schine
+
+Your love has taught me… how to be sad.
+And I have needed, for ages
+A woman to make me sad
+A woman in whose arms I could weep
+Like a sparrow,
+A woman—to gather up my pieces—
+Like shards of shattered crystal
+
+Your love has taught me, my dear,
+The worst of habits
+It has taught me to fill up my glass
+A thousand times per night
+And to sample the treatment of druggists
+To knock at the diviners’ door
+It has taught me— I now leave my home
+To comb the roadside flagstones
+And I stalk your visage
+In the rain, and in the lights of cars
+I stalk your specter
+Even… even…
+In sheets of advertisements…
+
+Your love has taught me…
+How I’ve been love-lost in my own face—for hours
+Searching for a gypsy poem,
+That every gypsy girl might envy
+Searching for a face—a voice—
+Your love is all the faces and all the voices.
+
+Your love has made me enter, my dear
+Cities of sorrows
+Before you, I had not entered
+Cities of sorrows—
+I had never known—
+That a tear was a person
+That a person without sadness
+Is the memory of a person…
+
+Your love has taught me…
+To behave like kids,
+To draw your face—
+With chalk upon the walls
+And on the sails of fishermen’s crafts
+Upon the church bells,
+And the crosses.
+Your love has taught me…
+How love alters the turning of time—
+It has taught me that when I love,
+The earth holds back its spinning
+Your love has taught me things…
+That were never part of the accounting
+So I read the stories of children—
+I entered the palaces of the jinn kings
+I dreamed that the daughter of the sultan
+Married me—
+Those eyes of hers… purer than the gulf waters
+Those lips of hers… more luscious than a pomegranate’s bloom
+And I dreamed that I safeguarded her
+Like the knights,
+I dreamed that I gifted her,
+With strands of pearl and coral
+Your love has taught me, my dear, what delirium is
+It has taught me how life goes on,
+With the sultan’s daughter never coming.
+
+Your love has taught me…
+How I love you in all things
+In the naked tree
+In the desiccated, yellow leaves
+In the rainy weather—in the storms
+In the smallest of cafes—
+In which we, of an evening, drank our black coffee
+
+Your love has taught me to seek refuge
+In nameless hotels
+In nameless churches
+In nameless cafes
+Your love has taught me…
+How the night distends with strangers’ sorrows
+It has taught me… how to see Beirut:
+A woman… a madame of seductions
+A woman, wearing each and every night
+The finest garments she possesses
+Sprinkling perfume on her breasts
+For the sailors—and the princes—
+Your love has taught me…
+To weep for lack of crying
+It has taught me how sadness sleeps
+Like a young boy with severed feet
+On the streets of Rūsha and Ḥamrā’
+
+Your love has taught me… how to be sad.
+And I have needed, for ages
+A woman to make me sad
+A woman in whose arms I could weep
+Like a sparrow,
+A woman— to gather up my pieces—
+Like shards of shattered crystal
+"
+    </pre>
+
+</div>
+
+
+</div> <!-- end div id lhs -->
+<div id="rhs">
+   
+<div id="marryingKindVid">
+    <iframe width="350" height="150" src="https://www.youtube.com/embed/hOznhXS4m_c?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</div>   
+
+
+   
+</div> <!-- end div id rhs -->
+</div> <!--end id wholeBackground -->
+
+</body>
+
+</html>
